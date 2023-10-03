@@ -1,0 +1,724 @@
+body {
+    direction: rtl;
+    color: #52493e;
+}
+
+li {
+    padding: 5%;
+    border-top: 1px solid #d8d9c8;
+    text-align: center;
+    font-family: almoni-dl, sans-serif;
+    font-weight: 600;
+list-style: none;
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./תמונות/רקע.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.85;
+    filter: blur(10px);
+}
+
+#timer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(153, 226, 167);
+    margin-top: 2%;
+    height: 6%;
+    border-radius: 15px;
+}
+
+#nav,
+#proCard {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#nav::-webkit-scrollbar-thumb,
+#proCard::-webkit-scrollbar-thumb {
+    background-color: #cbac3c;
+}
+
+#nav::-webkit-scrollbar,
+#proCard::-webkit-scrollbar {
+    width: 8px;
+    background-color: transparent;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+
+#nav,
+#card {
+    height: 85%;
+    z-index: 3;
+    top: 12%;
+}
+
+#card {
+    right: 72%;
+}
+
+#nav,
+#timer {
+    right: 2%;
+}
+
+#seconds,
+#minutes,
+#hours {
+    background-color: #faebeb;
+    width: 5%;
+    text-align: center;
+    font-size: medium;
+}
+
+#weAreOpen {
+    font-weight: bolder;
+}
+
+#ShoppingCartIcon {
+    font-size: xx-large;
+}
+#ShoppingCardIcon {
+    font-size: 110%;
+}
+    #scButton{
+        display: none;
+    
+}
+
+
+h6 {
+    opacity: 0.5;
+}
+
+#divProducts {
+    margin-right: 19%;
+    margin-top: 85px;
+}
+
+#top {
+    position: fixed;
+    z-index: 5;
+    height: 9%;
+    background-color: rgb(79, 77, 77);
+}
+
+#noa {
+    z-index: 6;
+    top: 1%;
+    left: 3.5%;
+    color: rgb(249, 247, 247);
+    margin-left: 5%;
+}
+
+.border-radius {
+    border-radius: 15px;
+
+}
+
+#addToCard {
+    background-color: rgb(153, 226, 167);
+    border: none;
+    height: 40px;
+    width: 100px;
+    font-size: medium;
+}
+
+.gold {
+    color: #cbac3c;
+}
+
+.pro-img {
+    border-bottom-right-radius: 15%;
+    border-top-right-radius: 15%;
+}
+
+.gray {
+    border-top: #52493e solid 5px;
+}
+
+.text-start {
+    text-align: start;
+}
+
+.proCard,
+#costButton {
+    box-shadow: 0px 5px 10px rgba(65, 64, 64, 0.2);
+}
+
+.proCard:hover,
+#costButton:hover {
+    box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.2);
+}
+
+#addToCard:hover {
+    background-color: rgb(86, 174, 86);
+}
+
+.popup-window {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100vh;
+    background-color: #f1f2ec;
+    overflow: hidden;
+    display: none;
+    z-index: 4;
+    transition: width 0.5s, left 0.5s;
+overflow-y: auto;
+}
+
+#page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    opacity: 30%;
+    overflow: hidden;
+    display: none;
+    z-index: 4;
+}
+
+#page1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    opacity: 30%;
+    overflow: hidden;
+    display: none;
+    z-index: 6;
+
+}
+
+#upper {
+    display: flex;
+    justify-content: start;
+    padding-top: 60px;
+    background-color: rgb(94, 58, 3);
+    color: #f1f2ec;
+    padding-bottom: 20px;
+}
+
+#upper>img {
+    width: 70%;
+    height: 50%;
+    margin: 20px;
+}
+
+#upper>div {
+    margin: 20px;
+    text-align: start;
+}
+
+#countDiv {
+    display: flex;
+    justify-content: start;
+
+}
+
+#count {
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+#leftTop {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+}
+
+#leftDiv {
+    width: 100%;
+    height: 100%;
+}
+
+.green {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: rgb(94, 58, 3);
+    opacity: 0.8;
+    border: #f1f2ec solid 2px;
+    color: #f1f2ec;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.green:hover {
+    background-color: rgb(107, 95, 77);
+}
+
+.ipim {
+    width: 100%;
+    height: 10px;
+    padding-bottom: 30px;
+}
+
+#close {
+    height: 40px;
+    width: 40px;
+
+}
+
+#lower>h5 {
+    text-align: start;
+    color: rgb(94, 58, 3);
+    ;
+    font-weight: bolder;
+
+    margin: 30px;
+}
+
+#inputs {
+    display: flex;
+    justify-content: start;
+}
+
+#inputs>textarea {
+    margin: 20px;
+    background-color: #f1f2ec;
+    width: 40%;
+    color: rgb(94, 58, 3);
+    border: none;
+    border-bottom: rgb(94, 58, 3) solid 1px;
+}
+
+#addbutton {
+    background-color: rgb(94, 58, 3);
+    color: #f1f2ec;
+    width: 80%;
+    margin: 5%;
+    padding: 5px;
+    font-size: larger;
+    border: none;
+
+}
+
+#lower {
+    text-align: start;
+}
+
+#deliveryDetails {
+    background-color: #cbac3c;
+    color: #f1f2ec;
+    justify-content: space-between;
+    padding: 18px 26px 16px 24px;
+    width: calc(100% + 30px);
+    margin-left: 0;
+    margin-right: -30px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    text-align: start;
+    margin-bottom: 10%;
+}
+
+#changeDel {
+    color: #cbac3c;
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background-color: rgb(255, 237, 216);
+    margin-top: 7%;
+}
+
+#changeDel:hover,
+.changeFood:hover {
+    background-color: bisque;
+}
+
+.h8 {
+    font-size: small;
+    margin: -3%;
+
+}
+
+.h7 {
+    font-size: medium;
+    margin: -3%;
+}
+
+#pen {
+    font-size: small;
+}
+
+#popupdel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100vh;
+    background-color: white;
+    overflow: hidden;
+    display: none;
+    z-index: 7;
+    margin: 25%;
+    margin-top: 0;
+    overflow-y: auto;
+}
+
+#divChange {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+    align-items: center;
+}
+
+#pickUpChange,
+#deliveryChange,
+#send {
+    width: 20%;
+    height: 50%;
+    margin: 4%;
+    border-radius: 20px;
+    font-size: large;
+    border: none;
+}
+
+#detailsDiv {
+    text-align: start;
+    width: 70%;
+    margin-right: 10%;
+}
+
+#send {
+    margin-right: 50%;
+}
+
+#detailsDiv1 {
+    text-align: start;
+    width: 70%;
+    margin-right: 10%;
+}
+
+#detailsDiv>div {
+    margin-top: 3%;
+}
+
+#delCost {
+    width: 100%;
+    height: 70px;
+    text-align: start;
+}
+
+#delCost1,
+#delCost2 {
+    font-size: small;
+    margin: 0%;
+}
+
+#delCost1 {
+    color: #cbac3c;
+}
+
+#textCard {
+    margin-bottom: 120px;
+}
+
+#proCard {
+    height: 52%;
+}
+
+#costButton {
+    z-index: 100;
+    background-color: #dcbf58;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    width: 80%;
+    height:8%;
+    border: none;
+    border-radius: 25px;
+    visibility: hidden;
+    margin-left: 12%;
+}
+
+#shach {
+    font-size: larger;
+}
+
+.productInCard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#imageInCard {
+    width: 40px;
+    height: 40px;
+    border-radius: 25%;
+    margin: 4px;
+
+}
+
+.nameFood {
+    font-size: 90%;
+    text-align: start;
+}
+
+.pricef {
+    font-size: 75%;
+    text-align: start;
+}
+
+.changeFoodDiv {
+    display: flex;
+    justify-content: start;
+}
+
+.changeButtons {
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.minus {
+    color: red;
+    background-color: rgb(249, 208, 208);
+    font-size: large;
+}
+
+.changeFood {
+    background-color: rgb(255, 237, 216);
+    color: #cbac3c;
+    padding-bottom: 5%;
+
+}
+
+.minus:hover {
+    background-color: rgb(227, 174, 174);
+}
+
+.pen {
+    font-size: x-small;
+}
+
+.cnt {
+    font-size: small;
+    background-color: #f1f1ee;
+}
+
+.cnt:hover {
+    background-color: #dbdcd7;
+
+}
+
+.plus {
+    color: rgb(36, 106, 50);
+    background-color: rgb(209, 235, 214);
+    font-size: larger;
+    padding-bottom: 30px;
+
+}
+
+.plus:hover {
+    background-color: rgb(154, 208, 165);
+
+}
+
+.rdiv {
+    display: flex;
+    justify-content: start;
+}
+
+.noteF {
+    font-size: small;
+    text-align: start;
+}
+
+.noteFH6 {
+    font-size: x-small;
+    text-align: start;
+    color: #52493e;
+}
+
+#closeChange {
+    margin: 5%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    color: #545453;
+    border: none;
+    background-color: rgb(238, 235, 235);
+}
+
+#closeChange:hover {
+    background-color: rgb(204, 204, 204);
+}
+
+#searchIconButton{
+    display: none;
+}
+
+@media screen and (max-width: 992px) and (min-width: 0px){
+
+    #divProducts{
+        margin-right: 0;
+        margin-top: 170px;
+     }
+
+    li{
+        padding: 0;
+        padding-top: 1%;
+    }
+    .cat-but{
+        font-size: 15px ;
+
+    }
+    #deliveryDetails{
+flex-wrap: wrap;
+    }
+  
+#search{
+display: none;
+height: 0px;
+margin: 0;
+padding: 0;
+}
+#categories{
+    margin: 0 !important;
+    padding: 0px;
+    display: flex ;
+}
+    #nav{
+        margin: 0;
+       padding: 0px !important;
+        height: 12%;
+        overflow-y: hidden;
+        overflow-x: auto;
+        margin-bottom: -100%;
+    }
+    #nav::-webkit-scrollbar{
+        height: 8px; }
+
+
+    .popup-window{
+        width: 62%;
+    }
+    
+    #page{
+        width: 38%;
+    }
+    #card{
+        margin-right: -7%;
+    }
+
+
+    h6{
+        font-size: 14px;
+    }
+    #search{
+        display: none;
+    }
+    #searchIconButton{
+        display: block;
+        color: #cbac3c;
+        border-radius: 50%;
+height: 40px;   
+width: 40px;
+font-size: medium;
+margin-left: 2%;
+    }
+#noa{
+    margin-left: 1%;
+    font-size: x-large;
+    margin-top: 1%;
+}
+#weWillOpenIn,#weAreOpen,#hours,#seconds,#minutes{
+    font-size: small !important;
+}
+}
+
+@media screen and (max-width: 768px) and (min-width: 0px){
+#card, #timer{
+visibility: hidden;
+}
+#card{
+    z-index:7;
+right: 15%;
+width: 80%;
+}
+#scButton {
+display: block;
+color: #cbac3c;
+border-radius: 50%;
+height: 40px;   
+width: 40px;
+margin-right: 2%;
+margin-top: 1%;
+}
+#
+
+.popup-window{
+    width: 100%;
+    z-index: 102;
+}
+#popupdel{
+    width: 100%;
+    z-index: 105;
+    margin: 0;
+
+}
+
+#page{
+    width: 0%;
+}
+
+body{
+    padding-left: 5%;
+}
+#nav{
+width: 95%;}
+.dive{
+    display: flex;
+justify-content: space-between;
+}
+#costButton{
+position: fixed;
+bottom: 5px;
+left: 0px;
+}    
+}
+
+
+
+
+#searchN{
+    padding: 1%;
+}
+#searchText{
+    height: 35px;
+}
+#weWillOpenIn,#weAreOpen,#hours,#seconds,#minutes{
+    font-size: medium;
+}
+#close-card{
+    visibility: hidden;
+    color: rgb(236, 48, 48);
+    border-radius: 50%;
+    font-size: xx-large;
+    position: fixed;
+    top: 5%;
+    right: 45%;
+    left: 45%;
+    z-index: 100;
+}

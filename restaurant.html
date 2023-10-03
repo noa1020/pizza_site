@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="restaurant.css">
+    <link rel="stylesheet"
+        href="./ספריית אייקונים - font awesome/fontawesome-free-5.12.0-web/fontawesome-free-5.12.0-web/css/all.css" />
+
+    <title>restaurant</title>
+</head>
+
+<body >
+    <div class="background-image "></div>
+    <div id="top" class="fixed-top ">
+        <div id="timer" class=" col-lg-5 col-md-6 shadow-lg p-3  bg-body-tertiary fixed-top mt-3">
+            <img src="" id="timeImg" class="d-block">
+            <div id="weAreOpen"></div>
+            <div id="weWillOpenIn"></div>
+            <div id="seconds"></div>:
+            <div id="minutes"></div>:
+            <div id="hours"></div>
+        </div>
+        <div class="dive">
+        <button id="scButton" class="border-0 bg-light"><i id="ShoppingCardIcon" class="fas fa-shopping-cart"></i></button>
+        <div class="d-flex justify-content-end "id="searchN">
+        <h2 id="noa" >noa&mali</h2>
+        <button id="searchIconButton" class="border-0 bg-light"><i id="searchIcon" class="fas fa-search"></i></button>
+    </div>
+</div>
+    </div>
+<i id="close-card" class="fas fa-window-close"></i>
+
+
+
+
+    
+    <nav id="nav" class="col-lg-2 col-md-7 pt-4  shadow-lg p-3  bg-body-tertiary  bg-light scrollable   fixed-top  border-radius">
+        <input id="search" class="col-12 text-center" type="text" placeholder="חפש מנה/ תפריט">
+        <div id="categories" class="navbar-expand-lg        text-right  mt-5">
+            <li> <button type="button" id="0" class="btn btn-outline-secondary border-0 p-3  cat-but">מנות
+                    פתיחה</button> </li>
+            <li> <button type="button" id="1" class="btn btn-outline-secondary border-0 p-3  cat-but">סלטים</button>
+            </li>
+            <li> <button type="button" id="2" class="btn btn-outline-secondary border-0 p-3  cat-but">מהתאבון</button>
+            </li>
+            <li> <button type="button" id="3" class="btn btn-outline-secondary border-0 p-3  cat-but">מוקרמים</button>
+            </li>
+            <li> <button type="button" id="4" class="btn btn-outline-secondary border-0 p-3  cat-but">קינוחים</button>
+            </li>
+            <li> <button type="button" id="5" class="btn btn-outline-secondary border-0 p-3  cat-but ">שתיה</button>
+            </li>
+        </div>
+    </nav>
+
+    <div id="divProducts" class="col-lg-6  col-md-7">
+    </div>
+
+
+
+
+    <div id="card" class="col-lg-3 col-md-4 pt-4  shadow-lg pl-0  bg-body-tertiary  bg-light   fixed-top border-radius">
+        <div class="d-flex justify-content-between">
+            <div class="d-flex ">
+                <h5 class=" pt-2 pr-2 ">שלום
+                </h5>
+                <h5 id="guest" class="pt-2 pr-2"> אורח
+                </h5>
+                
+            </div>
+            <i id="ShoppingCartIcon" class="fas fa-shopping-cart pt-1 pl-2 ml-3"></i>
+        </div>
+        <div id="deliveryDetails" class="d-flex  mt-4 pt-4 pb-4">
+            <div>
+                <h5 id="adressForDelivery" class="h8">כתובת ההזמנה לאיסוף עצמי:</h5><br>
+                <h4 id="adress" class="h7">רשבא 11, מודיעין עילית</h4><br>
+                <h5 id="time" class="h8">זמן ההכנה משוער: 25 דקות</h5>
+            </div>
+            <button id="changeDel"><i id="pen" class="fas fa-pen gold"></i></button>
+        </div>
+        <div id="proCard" class="scrollable">
+         <h6  id="textCard"class="text-center   mt-3 pt-5 border-top">העגלה שלך ריקה</h6>
+
+            <div id="delCost"class="border-bottom pb-2"><h5 id="delCost1">דמי משלוח</h5><br><h5 id="delCost2">15₪</h5></div>
+        </div>
+         <button id="costButton" class="text-center "><span>לתשלום: </span><span id="shach">₪</span><span id="cost"></span></button>
+
+    </div>
+</div>
+
+</body>
+<script src="./jquery-3.6.4.min.js"></script>
+<script src="./restaurant.js"></script>
+
+</html>

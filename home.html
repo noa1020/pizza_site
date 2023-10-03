@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="background-image"></div>
+    <h1 class="text-center display-1 position-relative mt-5">noa&mali</h1>
+    <form class="position-relative  col-lg-7 ">
+        <label>מספר טלפון</label>
+        <input id="phone" class="col-lg-3" type="text" maxlength="10" oninput="validateInput(this)"><br>
+        <label>שם</label>
+        <input id="name" class="col-lg-3" type="text">
+    </form>
+
+    <div class="position-relative d-flex justify-content-center">
+        <button id="delivery" class="btn btn-secondary m-1 ">משלוח</button>
+        <button id="pickUp" class="btn btn-secondary m-1">איסוף עצמי</button>
+
+    </div>
+    <form id="deliveryForm" class="position-relative z-1 col-lg-8  mt-3">
+        <label>עיר</label>
+        <input id="city" class="col-lg-5" type="text"><br>
+        <label>רחוב</label>
+        <input id="street" class="col-lg-5" type="text"><br>
+        <label>מס' בית</label>
+        <input id="apartment" class="col-lg-1" type="number">
+        <label>קומה</label>
+        <input id="floor" class="col-lg-1" type="number">
+        <label>דירה</label>
+        <input id="login" class="col-lg-1" type="number"><br>
+        <label>הערות לשליח</label>
+        <textarea id="notes" class="col-lg-5 mt-2" type="text"></textarea><br>
+    </form>
+    <div class="position-relative d-flex justify-content-center">
+        <button id="submit" class="btn btn-secondary mt-1 col-lg-1 ">אישור</button>
+    </div>
+</body>
+<script src="./home.js"></script>
+
+</html>
+<style>
+    h1 {
+        color: rgb(2, 56, 4);
+    }
+
+    #deliveryForm,
+    #submit {
+        visibility: hidden;
+    }
+
+    .background-image {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-image: url(./תמונות/רקע.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.85;
+        filter: blur(10px);
+
+    }
+
+    body {
+        direction: rtl;
+    }
+</style>

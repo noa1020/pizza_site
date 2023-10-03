@@ -1,0 +1,30 @@
+body {
+    direction: rtl;
+    color: #52493e;
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./תמונות/רקע.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.85;
+    filter: blur(10px);
+
+}
+
+#forPaing{
+    z-index: 10;
+}
+
+#forPaing{
+    color: rgb(2, 56, 4);
+
+}
+#ccForm{
+    visibility: hidden;
+}

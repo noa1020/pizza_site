@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="payment.css">
+        <link rel="stylesheet"
+            href="./ספריית אייקונים - font awesome/fontawesome-free-5.12.0-web/fontawesome-free-5.12.0-web/css/all.css" />
+        <title>payment</title>
+</head>
+<body>
+    <div class="background-image "></div>
+
+    <h3 class=" position-relative text-center m-4" id="forPaing"></h3>
+
+    <div class="  position-relative d-flex justify-content-center">
+        <button id="cc" class="btn btn-secondary m-2 ">אשראי</button>
+        <button id="cash" class="btn btn-secondary m-2">מזומן</button>
+    </div>
+
+    <div id="divSend"class="position-relative d-flex justify-content-center"></div>
+
+    <form id="ccForm" class="position-relative z-1 col-lg-8  mt-3"action="./end.html"  onsubmit="return validateForm()">
+        <label>מספר כרטיס</label>
+        <input id="cardNumber" class="col-lg-4" type="text" minlength="16"  maxlength="16" oninput="validateInput(this)"><br>
+        <label>תוקף</label>
+        <input id="expDate" class="col-lg-2" type="month">
+        <label>cvv</label>
+        <input id="cvv" class="col-lg-1" type="text"minlength="3" maxlength="4" oninput="validateInput(this)"><br>
+        <label>ת.ז.</label>
+        <input id="id" class="col-lg-4" maxlength="9" minlength="9"oninput="validateInput(this)" type="text">
+        <button class="btn btn-success"id="ok">אישור</button>
+    </form>
+
+
+</body>
+<script src="./jquery-3.6.4.min.js"></script>
+<script src="./payment.js"></script>
+</html>
